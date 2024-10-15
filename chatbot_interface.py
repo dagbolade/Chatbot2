@@ -233,7 +233,7 @@ def handle_chat():
 
 # Main function
 def main():
-    st.image('https://www.solent.ac.uk/graphics/logo/rebrandLogoSticky.svg', width=200)
+    st.image('https://www.solent.ac.uk/graphics/logo/logo-white.svg', width=200)
     st.markdown('<p class="big-font">Hi there, welcome to Solent University!</p>', unsafe_allow_html=True)
 
     # Define a few example prompts based on the intents
