@@ -8,7 +8,9 @@ import pickle
 
 from gtts import gTTS
 from keras.models import load_model
-
+import sys
+from tensorflow.keras import preprocessing
+sys.modules['keras.src.preprocessing'] = preprocessing
 # Custom styling
 st.markdown(
     """
