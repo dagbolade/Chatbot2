@@ -1,0 +1,450 @@
+{"intents": [
+        {"tag": "greeting",
+        "patterns": ["hello", "hi", "hey", "greetings", "good morning", "good afternoon", "good evening"],
+        "responses": ["Hello! How can I assist you with the admissions and enrollment process today?", "Hi! How can I help you today?", "are you looking for information about admissions and enrollment?"]
+        },
+
+        {"tag": "name",
+        "patterns": ["name", "who are you", "what's your name"],
+        "responses": ["My name is SolentBot. I am here to help you with the admissions and enrollment process.", "I'm SolentBot, your virtual assistant. I can help you with the admissions and enrollment process.", "SolentBot here! I can help you with the admissions and enrollment process."]
+        },
+
+        {"tag": "help",
+        "patterns": ["help", "need help", "need assistance"],
+        "responses": ["How can I help you today?", "What can I help you with today?", "How can I assist you today?"]
+        },
+
+        {"tag": "farewell",
+        "patterns": ["bye", "goodbye", "see you", "thanks"],
+        "responses": ["Goodbye! Feel free to return anytime you have more questions. Have a great day!"]
+        },
+
+        {
+          "tag": "unclear",
+            "patterns": [],
+            "responses": [
+                "I'm not sure I understand what you're asking. Could you rephrase that?",
+                "Can you please provide more detail or ask in a different way?",
+                "I'm having a little trouble understanding. Could you clarify?"
+            ]
+        },
+        {
+          "tag": "fallback",
+            "patterns": [],
+            "responses": [
+                "I'm sorry, I don't know the answer to that. Could you ask another question or check how website: https://www.solent.ac.uk/?",
+                "I'm not sure I understand. Could you rephrase that?",
+              "I'm sorry, i might not have the answer to that. can you check our website for more information?,here's the link: www.solent.ac.uk",
+                "I'm sorry, I don't have the answer to that. You can find more information on our website: www.solent.ac.uk"
+
+            ]
+        },
+
+
+        {"tag": "thanks",
+            "patterns": ["thank you", "thanks", "thank you so much"],
+            "responses": ["You're welcome!", "No problem!", "My pleasure!","feel free to ask me anything else."]
+        },
+
+        {"tag": "master_programs",
+          "patterns": ["master programs", "masters", "postgraduate", "postgrad", "postgraduate programs"],
+          "responses": ["We offer a wide range of postgraduate courses in various fields including Business, Engineering, Arts, and Sciences. You can find more information about our courses on our website.",
+            "our postgraduate programs are designed to help you advance your career and gain specialized knowledge in your field. You can find more information about our courses on our website www.solent.ac.uk/courses/postgraduate"]
+        },
+
+        {"tag": "undergraduate_programs",
+            "patterns": ["undergraduate programs", "undergrad", "undergraduate", "bachelor", "bachelor programs"],
+            "responses": ["We offer a wide range of undergraduate courses in various fields including Business, Engineering, Arts, and Sciences. You can find more information about our courses on our website.",
+            "our undergraduate programs are designed to help you advance your career and gain specialized knowledge in your field. You can find more information about our courses on our website www.solent.ac.uk/courses/undergraduate"]
+        },
+
+        {"tag": "admission_process",
+        "patterns": ["admission process", "how to apply", "application process"],
+        "responses": ["The admission process involves submitting an online application, sending in your transcripts and other necessary documents, and waiting for an admission decision."]
+        },
+
+        {"tag": "required_documents",
+        "patterns": ["required documents", "documents needed", "what documents"],
+        "responses": ["You will need to submit your transcripts, proof of identity, letters of recommendation, and any test scores (if applicable)."]
+        },
+
+        {"tag": "application_deadline",
+        "patterns": ["application deadline", "last date to apply", "deadline"],
+        "responses": ["The application deadline for the Fall semester is June 30th, and for the Spring semester, it is November 30th.", "Deadlines vary for different courses. You can find the application deadline for your course on our website."]
+        },
+
+        {"tag": "application_fee",
+        "patterns": ["tuition", "fees", "cost", "tuition fees"],
+        "responses": ["The tuition fee for undergraduate programs is approximately £9,250 per year for UK students. For international students, the fee is £13,800 per year."]
+        },
+
+        {"tag": "financial_aid",
+        "patterns": ["financial aid", "scholarships", "grants", "funding"],
+        "responses": ["We offer a variety of scholarships and financial aid options. You can apply for financial aid through the student portal after completing your application."]
+        },
+
+        {"tag": "enrollment_process",
+        "patterns": ["enrollment process", "how to enroll", "enrollment"],
+        "responses": ["After receiving your admission offer, you can enroll online through the student portal. You will need to choose your courses and pay the enrollment fee."]
+        },
+
+
+
+        {"tag": "contact_information",
+        "patterns": ["contact", "phone number", "email", "address"],
+        "responses": ["You can contact the Admissions Office at admissions@solent.ac.uk or call us at +44 (0)23 8201 5066."]
+        },
+
+        {"tag": "farewell",
+        "patterns": ["bye", "goodbye", "see you", "thanks"],
+        "responses": ["Goodbye! Feel free to return anytime you have more questions. Have a great day!"]
+        },
+        {"tag": "course_information",
+          "patterns": ["courses", "programs", "degrees", "majors"],
+          "responses": ["We offer a wide range of undergraduate and postgraduate courses in various fields including Business, Engineering, Arts, and Sciences. You can find more information about our courses on our website: https://www.solent.ac.uk/courses"]
+        },
+
+        {"tag": "international_students",
+        "patterns": ["international students", "international", "visa"],
+        "responses": ["International students are welcome! We have a dedicated International Office to assist you with the application process, visa information, and other related queries."]
+        },
+
+        {"tag": "visa",
+        "patterns": ["visa", "student visa", "visa information"],
+        "responses": ["International students will need to apply for a Tier 4 Student Visa. You can find more information and assistance on the UK government's official website or contact our International Office."]
+        },
+
+        {"tag": "scholarships",
+        "patterns": ["scholarships", "financial aid", "funding"],
+        "responses": ["We offer a variety of scholarships and financial aid options. You can apply for financial aid through the student portal after completing your application."]
+        },
+
+        {"tag": "student_portal",
+        "patterns": ["student portal", "portal", "website"],
+        "responses": ["You can access the student portal through our website. You will need to create an account using your email address and password."]
+        },
+
+        {"tag": "help",
+        "patterns": ["help", "need help", "need assistance"],
+        "responses": ["How can I help you today?", "What can I help you with today?", "How can I assist you today?"]
+        },
+
+        {"tag": "admission_requirements",
+        "patterns": ["admission requirements", "eligibility", "entry requirements"],
+        "responses": ["Admission requirements vary for different courses. You can find detailed information about admission requirements for each course on our website."]
+        },
+
+        {"tag": "accommodation",
+         "patterns": ["accommodation", "hostel", "housing", "living"],
+          "responses": ["We offer a variety of on-campus and off-campus accommodation options for students. You can explore and apply for accommodation through our website."]
+        },
+
+        {"tag": "student_finance",
+            "patterns": ["student finance", "tuition fees", "fees", "cost"],
+            "responses": ["The tuition fee for undergraduate programs is approximately £9,250 per year for UK students. For international students, the fee is £13,800 per year."]
+        },
+
+
+        {"tag": "student_visa",
+            "patterns": ["student visa", "visa", "visa information"],
+            "responses": ["International students will need to apply for a Tier 4 Student Visa. You can find more information and assistance on the UK government's official website or contact our International Office."]
+        },
+
+        {"tag": "student_portal",
+            "patterns": ["student portal", "portal", "website"],
+            "responses": ["You can access the student portal through our website. You will need to create an account using your email address and password."]
+        },
+
+        {"tag": "student_life",
+            "patterns": ["student life", "student activities", "clubs", "societies"],
+            "responses": ["We have a vibrant student community with a variety of clubs and societies. You can find more information about student life on our website,\n here,is the link: https://www.solent.ac.uk/discover/52-things-to-do/week-51-clubs-and-societies"]
+
+        },
+
+        {"tag": "student_support",
+            "patterns": ["student support", "student services", "student help"],
+            "responses": ["We have a dedicated Student Support team to assist you with any issues or concerns you may have during your time at the university. You can find more information about student support on our website."]
+        },
+
+        {"tag": "campus_tour",
+            "patterns": ["campus tour", "visit campus", "campus visit"],
+            "responses": ["We organize regular campus tours for prospective students and their families. You can schedule a campus tour by contacting our Admissions Office or through our website."]
+        },
+
+        {"tag": "language_requirements",
+            "patterns": ["language requirements", "english proficiency", "IELTS", "TOEFL"],
+            "responses": ["International students must provide proof of English proficiency through IELTS, TOEFL, or an equivalent examination. The minimum IELTS score required is 6.5."]
+        },
+
+        {"tag": "deferral",
+            "patterns": ["defer", "deferral", "postpone", "delay admission"],
+            "responses": ["If you need to defer your admission, please contact the Admissions Office as soon as possible to discuss your options and complete the necessary paperwork."]
+        },
+
+        {"tag": "transfer_students",
+            "patterns": ["transfer", "transfer students", "credit transfer"],
+            "responses": ["Transfer students are welcome! Please contact our Admissions Office to discuss the transfer of your credits and other admission procedures."]
+        },
+
+        {"tag": "part_time_work",
+            "patterns": ["part-time work", "work while studying", "jobs"],
+            "responses": ["Students are allowed to work part-time while studying. The university also offers various on-campus job opportunities for students."]
+        },
+
+        {"tag": "covid_19_guidelines",
+            "patterns": ["covid-19", "coronavirus", "pandemic", "covid guidelines"],
+            "responses": ["We are closely following government guidelines regarding COVID-19 to ensure the safety of our students and staff. You can find detailed information and updates on our website."]
+        },
+
+        {"tag": "orientation_program",
+            "patterns": ["orientation", "orientation program", "induction"],
+            "responses": ["We conduct an orientation program for all new students to familiarize them with the campus, facilities, and university policies. The dates and details of the orientation program will be communicated to you after enrollment."]
+        },
+
+        {"tag": "undergraduate_admission",
+            "patterns": ["undergraduate admission", "bachelor admission", "undergrad admission"],
+            "responses": ["Undergraduate admissions require you to have completed your secondary education with satisfactory grades. You can find more details and apply on our admissions page on the website."]
+        },
+
+        {"tag": "postgraduate_admission",
+            "patterns": ["postgraduate admission", "masters admission", "postgrad admission"],
+            "responses": ["Postgraduate admissions require you to have completed your undergraduate degree with satisfactory grades. You can find more details and apply on our admissions page on the website."]
+        },
+
+        {"tag": "phd_admission",
+            "patterns": ["requirements for phd program", "'how to apply for doctorate", "phd application process"],
+            "responses": ["PhD admissions require you to have completed your postgraduate degree with satisfactory grades. You can find more details and apply on our admissions page on the website."]
+        },
+
+        {"tag": "admission_status",
+            "patterns": ["admission status", "application status", "application decision"],
+            "responses": ["You can check your admission status through the student portal. You will also receive an email notification when your admission decision is available."]
+        },
+
+
+        {"tag": "admission_letter",
+            "patterns": ["admission letter", "offer letter", "admission offer"],
+            "responses": ["You will receive an admission offer through email. You can also check your admission status through the student portal."]
+        },
+
+        {"tag": "admission_portal",
+            "patterns": ["admission portal", "student portal", "website"],
+            "responses": ["You can access the student portal through our website. You will need to create an account using your email address and password."]
+        },
+
+        {"tag": "admission_process",
+            "patterns": ["admission process", "how to apply", "application process"],
+            "responses": ["The admission process involves submitting an online application, sending in your transcripts and other necessary documents, and waiting for an admission decision."]
+        },
+
+        {"tag": "admission_deadline",
+            "patterns": ["application deadline for admission", "last date to apply", "deadline", "application date"],
+            "responses": ["The application deadline for the Fall semester is June 30th, and for the Spring semester, it is November 30th.", "Deadlines vary for different courses. You can find the application deadline for your course on our website."]
+        },
+
+        {"tag": "admission_fee",
+            "patterns": ["admission fee", "application fee", "application cost"],
+            "responses": ["The application fee for undergraduate programs is £25 for UK students and £50 for international students. For postgraduate programs, the fee is £50 for UK students and £100 for international students."]
+        },
+
+        {"tag": "admission_requirements",
+            "patterns": ["admission requirements", "eligibility", "entry requirements"],
+            "responses": ["Admission requirements vary for different courses. You can find detailed information about admission requirements for each course on our website."]
+        },
+
+        {"tag": "admission_documents",
+            "patterns": ["admission documents", "required documents", "documents needed"],
+            "responses": ["You will need to submit your transcripts, proof of identity, letters of recommendation, and any test scores (if applicable)."]
+        },
+
+        {"tag": "admission_interview",
+            "patterns": ["admission interview", "interview", "interview process"],
+            "responses": ["Some courses may require an admission interview. You will be notified if an interview is required for your course."]
+        },
+
+        {"tag": "admission_offer",
+            "patterns": ["'tell me about the admission offer", "details about offer letter", "what does the admission offer include"],
+            "responses": ["You will receive an admission offer through email. You can also check your admission status through the student portal.","Your admission offer will be sent via email, detailing the course, fees, and next steps. You can also view the offer details on the student portal."]
+        },
+
+        {"tag": "admission_status",
+            "patterns": ["admission status", "application status", "application decision"],
+            "responses": ["You can check your admission status through the student portal. You will also receive an email notification when your admission decision is available."]
+        },
+
+        {"tag": "admission_decision",
+            "patterns": ["when will I receive the admission decision", "'how are admission decisions communicated", "admission status"],
+            "responses": ["You will receive an admission offer through email. You can also check your admission status through the student portal.","Admission decisions are typically communicated within 4-6 weeks after the application deadline via email. You can also find updates on your student portal."]
+        },
+
+        {"tag": "postgraduate_slc_loan",
+            "patterns": ["postgraduate student with SLC loan", "postgraduate SLC loan"],
+            "responses": ["Please indicate that you are paying the fees yourself on the funding page of online registration as the money will be paid directly to you to pay the University. On registration you will be able to agree the following payment plan: Postgraduate Home: 33% due in September, 33% due in January, and 34% due in May. The University will contact you if any further information is required."]
+        },
+
+        {"tag": "slc_sponsored_assistance",
+            "patterns": ["SLC-sponsored", "help with SLC application", "compelling personal reasons", "CPR"],
+            "responses": ["If you need assistance with your student loan application, or for compelling personal reasons, you should contact student.hub@solent.ac.uk or visit the Student Hub in TS114."]
+        },
+
+        {"tag": "find_tuition_fees",
+            "patterns": ["find out tuition fees", "tuition fees for the year"],
+            "responses": ["For new students, tuition fees will be quoted on offer letters. For continuing students, fees for the year will be available on online registration."]
+        },
+
+        {"tag": "contact_for_course_fees",
+            "patterns": ["unsure of course fees", "contact for course fees"],
+            "responses": ["New starters in their first year should contact admissions@solent.ac.uk. Continuing students should contact student.registry@solent.ac.uk. This includes any queries about the fee itself and residency status."]
+        },
+
+        {"tag": "find_accommodation_fees",
+            "patterns": ["accommodation fees", "room fees"],
+            "responses": ["Room fees will be shown when accommodation is booked for the year. Queries about room rates should be sent to accommodation@solent.ac.uk."]
+        },
+
+        {"tag": "find_other_fees",
+            "patterns": ["other fees and charges", "liable for other fees"],
+            "responses": ["Any mandatory extra fees and charges will be listed on the course pages, which are available on application. Any extras will be advertised at the time of offer."]
+        },
+
+        {"tag": "find_outstanding_fees",
+            "patterns": ["find out what I owe", "outstanding fees"],
+            "responses": ["During the year, for details of outstanding fees on your student account, please email income.team@solent.ac.uk."]
+        },
+
+        {"tag": "how_to_make_payment",
+            "patterns": ["make a payment", "how to pay fees", "paying fees and charges"],
+            "responses": ["For payment of fees and charges please refer to our payment page."]
+        },
+
+        {"tag": "cas_deposits_info",
+              "patterns": ["CAS deposits", "Confirmation of Acceptance for Studies deposits", "international students CAS"],
+              "responses": ["International students requiring a student visa to study in the UK will require a Confirmation of Acceptance for Studies. The University can only issue a CAS for applicants who have received an unconditional offer, firmly accepted their offer, and paid any necessary CAS deposit. Students are required to pay a CAS deposit of 50% of the course fees following firm acceptance of an unconditional offer."]
+        },
+
+        {"tag": "pay_cas_conditional_offer",
+            "patterns": ["pay CAS deposit conditional offer", "CAS deposit conditional"],
+            "responses": ["No. If your offer is conditional, you must meet all the conditions of your offer and receive an unconditional offer before paying your deposit. We cannot issue a CAS to any student with a conditional offer."]
+        },
+
+        {"tag": "cas_deposit_deferring",
+            "patterns": ["CAS deposit deferring", "CAS deposit need to be made if deferring"],
+            "responses": ["If you decide to defer your offer to the next academic year, you will be required to pay the CAS deposit as part of the deferral process, even if your offer is still conditional."]
+        },
+
+        {"tag": "how_much_cas_deposit",
+            "patterns": ["how much CAS deposit", "CAS deposit amount"],
+            "responses": ["The minimum that needs to be paid for your CAS deposit is 50% of your course fees. The maximum amount you can pay is the full tuition fee for your course."]
+        },
+
+        {"tag": "how_pay_cas_deposit",
+            "patterns": ["how pay CAS deposit", "make CAS deposit payment"],
+            "responses": ["To pay by credit or debit card, please visit www.solent.ac.uk/pay. UK or international bank transfers can be made using https://solentu.flywire.com. For more information, see our payments page."]
+        },
+
+        {"tag": "cas_deposit_receipt",
+            "patterns": ["CAS deposit receipt", "get a receipt for CAS deposit"],
+            "responses": ["Yes, if you pay online through www.solent.ac.uk/pay or https://solentu.flywire.com. The payment will also be included on the CAS which is issued in order for you to make your student visa application. The University does not issue receipts in hard copy."]
+        },
+
+        {"tag": "cas_deposit_scholarship",
+            "patterns": ["CAS deposit scholarship", "pay CAS deposit scholarship"],
+            "responses": ["If you have been awarded a full tuition fee scholarship (100% of your tuition fees) by the Solent University, we will waive the requirement for a tuition fee deposit. You must confirm acceptance of your scholarship. No other documentation is required. For partial scholarships, a deposit is still required or proof of a sponsorship letter from a recognised sponsor confirming funding of the remaining fees."]
+        },
+
+        {"tag": "cas_deposit_different_funding",
+            "patterns": ["CAS deposit different funding bodies", "pay CAS deposit multiple funding"],
+            "responses": ["If 100% of your tuition fees will be covered by recognised funding bodies, the tuition fee deposit will be waived."]
+        },
+
+        {"tag": "payment_plan_tuition_fees",
+            "patterns": ["payment plan tuition fees", "set up payment plan"],
+            "responses": ["As evidence of your commitment to studying at Solent while in the UK, Solent University policy requires overseas students to pay 50% of their fees before they register each year. Payment plans are not available for the first 50% of overseas tuition fees. Please see the payment plan page for more information."]
+        },
+
+        {"tag": "cas_deposit_refund",
+            "patterns": ["CAS deposit refund", "refund CAS deposit"],
+            "responses": ["If you are unable to obtain a visa to study in the UK, you will be entitled to a refund of your CAS deposit. You must provide a copy of the visa refusal letter from the UKVI. If you have paid your CAS deposit and decide not to study at Solent University, you will not be entitled to a refund of your CAS deposit."]
+        },
+
+        {"tag": "cas_deposit_refund_process",
+            "patterns": ["CAS deposit refund process", "process for CAS deposit refund"],
+            "responses": ["If you are entitled to a refund of your CAS deposit, you must provide a copy of the visa refusal letter from the UKVI. The refund will be processed within 28 days of receipt of the visa refusal letter."]
+        },
+
+
+        {"tag": "accommodation_application",
+              "patterns": ["accommodation application", "application of accommodation", "apply for accommodation", "deadline to apply for accommodation"],
+              "responses": ["You can apply for accommodation once you have accepted your offer to study at Solent University. The deadline for applications is 30 June."]
+        },
+
+        {"tag":"disability_accommodation",
+            "patterns": ["disability", "disabled", "special requirements", "special needs", "medical condition", "medical"],
+            "responses": ["We need to know any special requirements in advance as we have a limited amount of available rooms with specific adaptations."]
+        },
+
+        {"tag": "living_home",
+            "patterns": ["home", " living "],
+            "responses": ["You do not need to inform us if you will be living at home during your studies. You can opt out receiving updates by emailing us."]
+        },
+
+        {"tag": "guaranteed_room",
+            "patterns": ["guarantee", "room", "room offer", "accommodation offer"],
+            "responses": ["We guarantee accommodation to undergraduate applicants who apply for a full-time course starting in September at Solent University until 30 June. You must have chosen Solent as your firm choice."]
+        },
+
+        {"tag": "pay",
+            "patterns": ["accommodation payment", "payment installment", "payment for accommodation"],
+            "responses": ["Fees for UK students are split into three instalments due in October, January and April. You can use your maintenance loan to pay for student accommodation. International student accommodation fees are due in full by 1 September. Any contracts accepted after 1 September are required to be paid in full."]
+        },
+        {"tag": "advanced_payment",
+            "patterns": ["advanced payment for room", "deposit for accommodation", "deposit for room", "deposit for residence"],
+            "responses": ["We require students to pay an advanced rent payment of £150 for UK students, £1000 for international students, and £50 for returning students at the time of accepting your room offer."]
+        },
+        {"tag": "family_accommodation",
+          "patterns": ["family accommodation", "family", "children", "partner"],
+              "responses": ["Unfortunately we do not offer family accommodation. You will need to look for private accommodation in Southampton."]
+        },
+        {"tag": "moving_date",
+            "patterns": ["arrive on campus", "residence date ", "moving in", "date to move in", "date to move in"],
+            "responses": ["Standard contract starts on 14 September for UK residents. International students can arrive two days earlier."]
+        },
+        {"tag": "change_room",
+            "patterns": ["change room", "change residence", "change my room"],
+            "responses": ["Yes, we keep a waiting list for students wanting to move rooms. You can either change to a different flat or kitchen group."]
+        },
+        {"tag": "pets",
+            "patterns": ["pets", "allowed", "permitted", "animals", "support animals"],
+            "responses": ["No pets or support animals are allowed in our residences."]
+        },
+        {"tag": "parking",
+            "patterns": ["parking", "car", "bike", "permit", "car park", "motorbike", "onsite"],
+            "responses": ["Each residence has its own car park. There is an additional charge for parking. Students can apply for a space when applying for their accommodation. There are provisions for motorbikes at the residences and there is no charge to park there. You must provide us with the make, model and registration number of the vehicle. The residences also have bike storage available."]
+        },
+        {"tag": "covid_19_accommodation",
+            "patterns": ["covid-19", "coronavirus", "pandemic", "covid guidelines"],
+            "responses": ["We are closely following government guidelines regarding COVID-19 to ensure the safety of our students and staff. You can find detailed information and updates on our website."]
+        },
+        {"tag": "accommodation_cancellation",
+            "patterns": ["cancel accommodation", "cancellation of accommodation", "withdraw accommodation", "withdrawal of accommodation","canceling my accommodation reservation"],
+            "responses": ["If you wish to cancel your accommodation, you must inform us in writing. You will be charged a cancellation fee of £150. If you cancel after 1 September, you will be charged the full accommodation fee for the year.","'To cancel your accommodation, log in to the student housing portal or directly reach out to the accommodation office. Make sure to review the cancellation terms in your agreement."]
+        },
+        {"tag": "accommodation_refund",
+            "patterns": ["accommodation refund", "refund process for campus housing", "can I get a refund if I cancel my accommodation"],
+            "responses": ["If you cancel your accommodation before 1 September, you will be charged a cancellation fee of £150. If you cancel after 1 September, you will be charged the full accommodation fee for the year.","Accommodation refunds are subject to the terms of your housing agreement. For detailed information about the refund policy, please check your contract or contact the accommodation office."]
+        },
+        {"tag": "accommodation_pacakge",
+           "patterns": ["room packages", "included in room", "hall packages", "included in hall"],
+           "responses": ["Here are a list of what is included in hall fees: Up to 100 MB WiFi access (ethernet cables are also provided). Personal contents insurance. Social spaces with various complimentary activities. All utility bills. Cleaning of communal areas. Repairs and maintenance. Residence team available 24 hours a day. Exclusive access to the ResLife events and giveaways."]
+        },
+        {"tag": "offered_room",
+            "patterns": ["room", "offered room", "accepting housing offer", "decline room"],
+            "responses": ["You will be offered a room in one of our residences. You can either accept or decline the offer. If you accept the offer, you will need to pay an advanced rent payment of £150 for UK students, £1000 for international students, and £50 for returning students.","Upon receiving a room offer, you'll get an email outlining the acceptance process. Follow the instructions in the email to secure your accommodation."]
+        },
+        {"tag": "contract_length",
+            "patterns": ["contract length", "accommodation length", "period of stay"],
+            "responses": ["The standard contract length is 40 weeks. You can apply for a 50 week contract if you are a returning student or a postgraduate student."]
+        }
+    ]
+}
+
