@@ -3,7 +3,7 @@ streamlit
 numpy
 Keras
 gTTS
-tensorflow
+tensorflow==2.10.0
 speechrecognition
 scikit-learn
 

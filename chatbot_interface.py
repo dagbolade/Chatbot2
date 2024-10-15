@@ -8,7 +8,6 @@ import pickle
 
 from gtts import gTTS
 from keras.models import load_model
-from keras.src.preprocessing.text import tokenizer_from_json
 
 # Custom styling
 st.markdown(
@@ -37,29 +36,30 @@ st.markdown(
 import streamlit.components.v1 as components
 # title
 import random
+import pickle
 import numpy as np
+import json
+import speech_recognition as sr
 import nltk
 import pyttsx3
 from nltk.stem import WordNetLemmatizer
 import os
-from tensorflow.keras.preprocessing.text import Tokenizer  # Ensure tensorflow.keras is used
+from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.models import load_model
+import pickle
 import json
+
 
 nltk.download('punkt')
 nltk.download('wordnet')
 
 # load the model
-model = load_model('solentBot_model.h5')  # Use tensorflow.keras
+model = load_model('solentBot_model.h5')
 
-# load the tokenizer and encoder from JSON instead of pickle
-with open('tokenizer.json') as f:
-    tokenizer_json = json.load(f)
-    tokenizer = tokenizer_from_json(tokenizer_json)
+# load the tokenizer and encoder from pickle files
 
-with open('encoder.pickle', 'rb') as f:
-    encoder = pickle.load(f)
-
+tokenizer = pickle.load(open('tokenizer.pickle', 'rb'))
+encoder = pickle.load(open('encoder.pickle', 'rb'))
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
