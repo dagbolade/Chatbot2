@@ -11,6 +11,9 @@ from keras.models import load_model
 import sys
 from tensorflow.keras import preprocessing
 sys.modules['keras.src.preprocessing'] = preprocessing
+import nltk
+nltk.download('punkt')
+
 # Custom styling
 st.markdown(
     """
