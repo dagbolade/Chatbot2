@@ -44,7 +44,8 @@ import nltk
 import pyttsx3
 from nltk.stem import WordNetLemmatizer
 import os
-from keras.models import load_model
+#from keras.models import load_model
+from tensorflow.keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 
