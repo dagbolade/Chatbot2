@@ -46,6 +46,7 @@ from nltk.stem import WordNetLemmatizer
 import os
 from keras.models import load_model
 from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
 
 nltk.download('punkt')
 nltk.download('wordnet')
