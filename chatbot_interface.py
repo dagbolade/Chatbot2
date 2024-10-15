@@ -55,6 +55,10 @@ nltk.download('wordnet')
 
 # load the model
 model = load_model('solentBot_model.h5')
+import tensorflow as tf
+import streamlit as st
+import sys
+
 
 # load the tokenizer and encoder from pickle files
 
