@@ -12,7 +12,7 @@ import sys
 from tensorflow.keras import preprocessing
 sys.modules['keras.src.preprocessing'] = preprocessing
 import nltk
-nltk.download('punkt')
+nltk.download('punkt', force=True)
 
 # Custom styling
 st.markdown(
@@ -55,7 +55,7 @@ import pickle
 import json
 
 
-nltk.download('punkt')
+nltk.download('punkt', force=True)
 nltk.download('wordnet')
 
 # load the model
