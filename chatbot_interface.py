@@ -56,6 +56,7 @@ import json
 
 
 nltk.download('punkt', force=True)
+nltk.download('punkt_tab', force=True)
 nltk.download('wordnet')
 
 # load the model
